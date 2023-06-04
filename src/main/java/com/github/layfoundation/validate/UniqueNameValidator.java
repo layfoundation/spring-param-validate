@@ -21,9 +21,9 @@ public class UniqueNameValidator implements ConstraintValidator<UniqueName, Stri
             return true;
         }
         UserVo user = userService.getByName(name);
-        if (user == null) {
+        if (user != null) {
             return true;
         }
-        return false;
+        return true;
     }
 }

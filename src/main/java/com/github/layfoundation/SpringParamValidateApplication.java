@@ -9,5 +9,4 @@ public class SpringParamValidateApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringParamValidateApplication.class, args);
     }
-
 }
